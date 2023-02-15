@@ -18,18 +18,15 @@ for(img of document.querySelectorAll('img')){
     img.addEventListener('click', createIFrame)
 }    
     
-        
+ let count = 1       
 function createIFrame(e) {
 
     let iframe = document.querySelector('iframe')
 
-    if (iframe) {
-        iframe.remove()
-    }
+    iframe.remove()
 
     iframe = document.createElement('iframe')
     iframe.src = e.target.alt
-    iframe.style.width = '100%'
     document.querySelector('.showVideo').appendChild(iframe)
 }
 

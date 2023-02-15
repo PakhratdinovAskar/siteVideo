@@ -9,7 +9,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    /* position: fixed;  */
     z-index: 2;
 }
 
@@ -31,14 +30,12 @@ img{
 
 .showVideo{
     width: 100%;
-    /* position: absolute;
-    top: 70px; */
 }
 
 .content{
-    /* position: relative; */
     background-color: darkgreen;
     height: 100vh;
+    position: relative;
 }
 
 .react{
@@ -47,7 +44,22 @@ img{
     position: absolute;
     bottom: 0;
     overflow:scroll; 
-    height: 70%;
+    height: 80%;
+}
+
+@media (min-width: 500px){
+    .showVideo{
+        width: 75%;
+        height: 90%;
+        position: absolute;
+    }
+
+    .react{
+        height: 100vh;
+        width: 25%;
+        position: absolute;
+        right: 0;
+    }
 }
 
 
